@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "ComposeTheming"
 include ':app'
 include ':components'
+include ':features:registration'
