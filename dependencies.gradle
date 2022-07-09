@@ -13,10 +13,15 @@ ext {
     def lifecycleVersion = '2.5.0'
     def composeActivityVersion = '1.5.0'
     def jUnitVersion = '4.13.2'
+    def extJUnitVersion = '1.1.3'
     def espressoCoreVersion = '3.4.0'
+    def appCompatVersion = '1.4.2'
 
     coreDependency = [
-            core: "androidx.core:core-ktx:$coreVersion"
+            core     : "androidx.core:core-ktx:$coreVersion"
+    ]
+    appCompatDependency = [
+            appCompat: "androidx.appcompat:appcompat:$appCompatVersion"
     ]
     lifecycleDependency = [
             lifecycleRuntime: "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
@@ -31,7 +36,7 @@ ext {
             junit: "junit:junit:$jUnitVersion"
     ]
     androidTestImplDependency = [
-            junit           : "androidx.test.ext:junit:$jUnitVersion",
+            junit           : "androidx.test.ext:junit:$extJUnitVersion",
             junitComposeTest: "androidx.compose.ui:ui-test-junit4:$composeVersion",
             espressoCore    : "androidx.test.espresso:espresso-core:$espressoCoreVersion"
     ]
