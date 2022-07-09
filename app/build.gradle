@@ -46,6 +46,7 @@ android {
 }
 
 dependencies {
+    implementation project(":components")
 
     implementation coreDependency.values()
     implementation composeDependency.values()
