@@ -27,9 +27,16 @@ android {
     kotlinOptions {
         jvmTarget = jvmVersion
     }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_version
+    }
 }
 
 dependencies {
+    implementation project(":features:registration")
 
     implementation coreDependency.values()
     implementation composeDependency.values()

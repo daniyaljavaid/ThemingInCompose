@@ -46,7 +46,8 @@ android {
 }
 
 dependencies {
-    implementation project(":features:registration")
+    implementation project(":applications:linkedin")
+    implementation project(":applications:facebook")
 
     implementation coreDependency.values()
     implementation composeDependency.values()
