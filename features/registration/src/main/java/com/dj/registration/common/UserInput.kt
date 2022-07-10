@@ -7,7 +7,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.dj.components.InputField
-import com.dj.registration.theme.LocalExtendedTypography
+import com.dj.registration.theme.ExtendedTheme
 
 
 @Composable
@@ -24,7 +24,7 @@ fun UserInput(label: String, keyboardOptions: KeyboardOptions) {
             .padding(all = 10.dp)
             .fillMaxWidth(),
         keyboardOptions = keyboardOptions,
-        textStyle = LocalExtendedTypography.current.inputField// before: MaterialTheme.typography.body1
+        textStyle = ExtendedTheme.typography.inputField // or LocalExtendedTypography.current.inputField || Before: MaterialTheme.typography.body1
     )
 
 }
