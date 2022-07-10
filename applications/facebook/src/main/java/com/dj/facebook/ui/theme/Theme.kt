@@ -5,6 +5,8 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import com.dj.registration.theme.LocalExtendedTypography
 
 private val DarkColorPalette = darkColors(
     primary = Purple200,
@@ -27,6 +29,7 @@ private val LightColorPalette = lightColors(
     */
 )
 
+
 @Composable
 fun FacebookTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
@@ -37,11 +40,12 @@ fun FacebookTheme(
     } else {
         LightColorPalette
     }
-
-    MaterialTheme(
-        colors = colors,
-        typography = FacebookTypography,
-        shapes = Shapes,
-        content = content
-    )
+    CompositionLocalProvider(LocalExtendedTypography provides FacebookExtendedTypography) {
+        MaterialTheme(
+            colors = colors,
+            typography = FacebookTypography,
+            shapes = Shapes,
+            content = content
+        )
+    }
 }

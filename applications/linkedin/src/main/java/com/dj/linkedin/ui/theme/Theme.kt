@@ -5,6 +5,8 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import com.dj.registration.theme.LocalExtendedTypography
 
 private val DarkColorPalette = darkColors(
     primary = Purple200,
@@ -37,11 +39,12 @@ fun LinkedInTheme(
     } else {
         LightColorPalette
     }
-
-    MaterialTheme(
-        colors = colors,
-        typography = LinkedInTypography,
-        shapes = Shapes,
-        content = content
-    )
+    CompositionLocalProvider(LocalExtendedTypography provides LinkedInExtendedTypography) {
+        MaterialTheme(
+            colors = colors,
+            typography = LinkedInTypography,
+            shapes = Shapes,
+            content = content
+        )
+    }
 }
