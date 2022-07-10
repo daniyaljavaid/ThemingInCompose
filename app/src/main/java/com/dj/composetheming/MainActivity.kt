@@ -16,6 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.dj.components.InputField
 import com.dj.composetheming.ui.theme.ComposeThemingTheme
+import com.dj.composetheming.ui.theme.CustomTypography
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,7 +64,8 @@ fun UserInput(label: String, keyboardOptions: KeyboardOptions) {
         modifier = Modifier
             .padding(all = 10.dp)
             .fillMaxWidth(),
-        keyboardOptions = keyboardOptions
+        keyboardOptions = keyboardOptions,
+        textStyle = MaterialTheme.typography.body1
     )
 
 }

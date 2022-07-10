@@ -40,7 +40,7 @@ fun ComposeThemingTheme(
 
     MaterialTheme(
         colors = colors,
-        typography = Typography,
+        typography = CustomTypography,
         shapes = Shapes,
         content = content
     )
