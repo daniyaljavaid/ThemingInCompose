@@ -1,4 +1,4 @@
-package com.dj.composetheming.ui.theme
+package com.dj.linkedin.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
@@ -28,7 +28,7 @@ private val LightColorPalette = lightColors(
 )
 
 @Composable
-fun ComposeThemingTheme(
+fun LinkedInTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
@@ -40,7 +40,7 @@ fun ComposeThemingTheme(
 
     MaterialTheme(
         colors = colors,
-        typography = CustomTypography,
+        typography = LinkedInTypography,
         shapes = Shapes,
         content = content
     )

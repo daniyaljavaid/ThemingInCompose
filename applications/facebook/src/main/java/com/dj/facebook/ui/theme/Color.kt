@@ -1,4 +1,4 @@
-package com.dj.composetheming.ui.theme
+package com.dj.facebook.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

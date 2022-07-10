@@ -1,4 +1,4 @@
-package com.dj.composetheming.ui.theme
+package com.dj.linkedin.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
