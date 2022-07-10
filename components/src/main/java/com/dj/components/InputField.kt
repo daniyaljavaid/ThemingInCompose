@@ -1,11 +1,19 @@
 package com.dj.components
 
+import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.input.VisualTransformation
 
+@OptIn(ExperimentalComposeUiApi::class)
 @Composable
 fun InputField(
     text: String,
@@ -14,12 +22,19 @@ fun InputField(
     modifier: Modifier = Modifier,
     keyboardOptions: KeyboardOptions
 ) {
+    val keyboardController = LocalSoftwareKeyboardController.current
 
     OutlinedTextField(
         value = text,
         onValueChange = onValueChange,
         label = { Text(label) },
         modifier = modifier,
-        keyboardOptions = keyboardOptions
+        keyboardOptions = keyboardOptions,
+        keyboardActions = KeyboardActions(
+            onDone = { keyboardController?.hide() }
+        ),
+        visualTransformation = if (keyboardOptions.keyboardType == KeyboardType.Password)
+            PasswordVisualTransformation()
+        else VisualTransformation.None
     )
 }

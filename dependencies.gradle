@@ -5,7 +5,7 @@ ext {
     targetVersion = 32
     jvmVersion = '1.8'
 
-    def composeVersion = '1.0.1'
+    def composeVersion = '1.1.1'
 
     compose_version = composeVersion
 
