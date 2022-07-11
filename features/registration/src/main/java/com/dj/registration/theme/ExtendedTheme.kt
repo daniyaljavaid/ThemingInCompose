@@ -1,14 +1,14 @@
 package com.dj.registration.theme
 
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 
-// Note: accessible using -==- ExtendedTheme.typography.inputField -==-
-object ExtendedTheme {
-    val typography: ExtendedTypography
-        @Composable
-        get() = LocalExtendedTypography.current
+// Note: accessible using -==- MaterialTheme.customTypography.* -==-
+// Note: accessible using -==- MaterialTheme.customColors.* -==-
+val MaterialTheme.customTypography: ExtendedTypography
+    @Composable
+    get() = LocalExtendedTypography.current
 
-    val colors: ExtendedColors
-        @Composable
-        get() = LocalExtendedColors.current
-}
+val MaterialTheme.customColors: ExtendedColors
+    @Composable
+    get() = LocalExtendedColors.current
