@@ -11,33 +11,58 @@ import com.dj.registration.theme.ExtendedTypography
 
 // Set of Material typography styles to start with
 val LinkedInTypography = Typography(
-    body1 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
-    )
-    /* Other default text styles to override
-    button = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.W500,
-        fontSize = 14.sp
+    h1 = TextStyle(
+        fontFamily = FontFamily(
+            Font(R.font.playfairdisplayregular)
+        ),
+        fontWeight = FontWeight.Bold,
+        fontSize = 72.sp
     ),
-    caption = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 12.sp
+    h2 = TextStyle(
+        fontFamily = FontFamily(
+            Font(R.font.playfairdisplayregular)
+        ),
+        fontWeight = FontWeight.Bold,
+        fontSize = 60.sp
+    ),
+    h3 = TextStyle(
+        fontFamily = FontFamily(
+            Font(R.font.playfairdisplayregular)
+        ),
+        fontWeight = FontWeight.Bold,
+        fontSize = 48.sp
+    ),
+    h4 = TextStyle(
+        fontFamily = FontFamily(
+            Font(R.font.playfairdisplayregular)
+        ),
+        fontWeight = FontWeight.Bold,
+        fontSize = 32.sp
+    ),
+    h5 = TextStyle(
+        fontFamily = FontFamily(
+            Font(R.font.playfairdisplayregular)
+        ),
+        fontWeight = FontWeight.Bold,
+        fontSize = 24.sp
+    ),
+    h6 = TextStyle(
+        fontFamily = FontFamily(
+            Font(R.font.playfairdisplayregular)
+        ),
+        fontWeight = FontWeight.Bold,
+        fontSize = 20.sp
     )
-    */
 )
 
 val LinkedInExtendedTypography = ExtendedTypography(
-    label = TextStyle(
+    inputLabel = TextStyle(
         fontFamily = FontFamily(
             Font(R.font.playfairdisplayregular)
         ),
         fontWeight = FontWeight.Normal
     ),
-    inputField = TextStyle(
+    inputText = TextStyle(
         fontFamily = FontFamily(
             Font(R.font.playfairdisplayregular)
         ),

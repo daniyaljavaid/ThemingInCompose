@@ -6,7 +6,6 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.TextFieldDefaults
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.dj.components.InputField
 import com.dj.registration.theme.ExtendedTheme
@@ -23,11 +22,11 @@ fun UserInput(label: String, keyboardOptions: KeyboardOptions) {
         },
         label = label,
         modifier = Modifier
-            .padding(all = 10.dp)
+            .padding(top = 20.dp, start = 30.dp, end = 30.dp)
             .fillMaxWidth(),
         keyboardOptions = keyboardOptions,
-        labelTextStyle = ExtendedTheme.typography.label,
-        textStyle = ExtendedTheme.typography.inputField, // or LocalExtendedTypography.current.inputField || Before: MaterialTheme.typography.body1
+        labelTextStyle = ExtendedTheme.typography.inputLabel,
+        textStyle = ExtendedTheme.typography.inputText, // or LocalExtendedTypography.current.inputField || Before: MaterialTheme.typography.body1
         colors = TextFieldDefaults.outlinedTextFieldColors(
             focusedBorderColor = inputFieldColors.focusedBorderColor,
             focusedLabelColor = inputFieldColors.focusedLabelColor,
