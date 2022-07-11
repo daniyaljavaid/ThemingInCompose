@@ -4,9 +4,12 @@ import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Text
+import androidx.compose.material.TextFieldColors
+import androidx.compose.material.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.KeyboardType
@@ -22,7 +25,8 @@ fun InputField(
     modifier: Modifier = Modifier,
     keyboardOptions: KeyboardOptions,
     textStyle: TextStyle,
-    labelTextStyle: TextStyle
+    labelTextStyle: TextStyle,
+    colors: TextFieldColors
 ) {
     val keyboardController = LocalSoftwareKeyboardController.current
 
@@ -38,6 +42,7 @@ fun InputField(
         visualTransformation = if (keyboardOptions.keyboardType == KeyboardType.Password)
             PasswordVisualTransformation()
         else VisualTransformation.None,
-        textStyle = textStyle
+        textStyle = textStyle,
+        colors = colors
     )
 }
