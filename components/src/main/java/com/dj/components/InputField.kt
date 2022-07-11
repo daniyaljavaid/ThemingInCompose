@@ -21,14 +21,15 @@ fun InputField(
     onValueChange: (value: String) -> Unit,
     modifier: Modifier = Modifier,
     keyboardOptions: KeyboardOptions,
-    textStyle: TextStyle
+    textStyle: TextStyle,
+    labelTextStyle: TextStyle
 ) {
     val keyboardController = LocalSoftwareKeyboardController.current
 
     OutlinedTextField(
         value = text,
         onValueChange = onValueChange,
-        label = { Text(label) },
+        label = { Text(label, style = labelTextStyle) },
         modifier = modifier,
         keyboardOptions = keyboardOptions,
         keyboardActions = KeyboardActions(

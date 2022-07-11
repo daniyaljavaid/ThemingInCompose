@@ -24,6 +24,7 @@ fun UserInput(label: String, keyboardOptions: KeyboardOptions) {
             .padding(all = 10.dp)
             .fillMaxWidth(),
         keyboardOptions = keyboardOptions,
+        labelTextStyle = ExtendedTheme.typography.label,
         textStyle = ExtendedTheme.typography.inputField // or LocalExtendedTypography.current.inputField || Before: MaterialTheme.typography.body1
     )
 
