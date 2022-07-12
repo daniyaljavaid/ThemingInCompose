@@ -13,7 +13,8 @@ For this project we have following modules:
 * <b>:applications:facebook</b> - module which provides its own theme for registration screen
 * <b>:applications:linkedin</b> - module which provides its own theme for registration screen
 
-<b>How things work:</b>
+
+<big><b>How things work:</b></big>
 
 <b>Registration</b> feature module exposes all of its custom theming classes using <b>
 CompositionLocal</b> with default values. 
@@ -21,6 +22,7 @@ For example:
 
 Theming class <b>ExtendedColors</b> is exposed using <b>LocalExtendedColors</b> composition
 &
+
 Theming class <b>ExtendedTypography</b> is exposed using <b>LocalExtendedTypography</b> composition
 
 These classes will be used for customizing UI in <b>Registration</b> feature. 
