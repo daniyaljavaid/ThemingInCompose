@@ -48,9 +48,9 @@ and `ExtendedColors` objects provided by any of the <b>applications</b> modules.
 
 ## Results
 
-![DefaultTheme](readmeAssets/Screenshot_20220712_230627.png =500x100)
-![Theme1](readmeAssets/Screenshot_20220712_225015.png =500x100)
-![Theme2](readmeAssets/Screenshot_20220712_225203.png =500x100)
+[<img src="image.png" width="250"/>](readmeAssets/Screenshot_20220712_230627.png)
+[<img src="image.png" width="250"/>](readmeAssets/Screenshot_20220712_225015.png)
+[<img src="image.png" width="250"/>](readmeAssets/Screenshot_20220712_225203.png)
 
 <!-- ROADMAP -->
 
