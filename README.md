@@ -46,6 +46,11 @@ Now use `LocalExtendedTypography.current` & `LocalExtendedColors.current` to
 access `ExtendedTypography`
 and `ExtendedColors` objects provided by any of the <b>applications</b> modules.
 
+## Results
+
+![DefaultTheme](readmeAssets/Screenshot_20220712_230627.png)
+![Theme1](readmeAssets/Screenshot_20220712_225015.png)
+![Theme2](readmeAssets/Screenshot_20220712_225203.png)
 
 <!-- ROADMAP -->
 
