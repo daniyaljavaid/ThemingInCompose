@@ -13,16 +13,26 @@ For this project we have following modules:
 * <b>:applications:facebook</b> - module which provides its own theme for registration screen
 * <b>:applications:linkedin</b> - module which provides its own theme for registration screen
 
+<b>How things work:</b>
+<b>Registration</b> feature module exposes all of its custom theming class eg. for typography and colors
+using <b>CompositionLocal</b> with default values. 
+These classes will be used for customizing UI in <b>Registration</b> feature.
+Both <b>Applications</b> modules i.e linkedin & facebook
+will create instances for these custom theming classes and provide these instances to <b>Registration</b>
+feature module by using <b>CompositionLocalProvider</b>. 
+
+
 <!-- ROADMAP -->
 
 ## Roadmap
 
-- [x] Add <b>components</b>,<b>features</b> & <b>applications</b> modules
+- [x] Add <b>components</b>, <b>features</b> & <b>applications</b> modules
 - [x] Add <b>dependencies.gradle</b> to sync dependency versions across modules
 - [x] Add registration screen in feature module with <b>MaterialTypography</b>, <b>
   CustomTypography</b> & <b>Colors</b> support
 - [x] Provide themes from <b>Applications</b> module to <b>Registration</b> feature module
-- [ ] Add component spacing support in <b>Registration</b> module as each app can have different spacing
+- [ ] Add component spacing support in <b>Registration</b> module as each app can have different
+  spacing
 
 <!-- CONTRIBUTING -->
 

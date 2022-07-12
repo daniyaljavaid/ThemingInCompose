@@ -8,6 +8,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.dj.linkedin.R
 import com.dj.registration.theme.ExtendedTypography
+import com.dj.registration.theme.InputFieldTypography
 
 // Set of Material typography styles to start with
 val LinkedInTypography = Typography(
@@ -56,17 +57,19 @@ val LinkedInTypography = Typography(
 )
 
 val LinkedInExtendedTypography = ExtendedTypography(
-    inputLabel = TextStyle(
-        fontFamily = FontFamily(
-            Font(R.font.playfairdisplayregular)
+    inputFieldTypography = InputFieldTypography(
+        label = TextStyle(
+            fontFamily = FontFamily(
+                Font(R.font.playfairdisplayregular)
+            ),
+            fontWeight = FontWeight.Normal
         ),
-        fontWeight = FontWeight.Normal
-    ),
-    inputText = TextStyle(
-        fontFamily = FontFamily(
-            Font(R.font.playfairdisplayregular)
-        ),
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
+        text = TextStyle(
+            fontFamily = FontFamily(
+                Font(R.font.playfairdisplayregular)
+            ),
+            fontWeight = FontWeight.Normal,
+            fontSize = 16.sp
+        )
     )
 )

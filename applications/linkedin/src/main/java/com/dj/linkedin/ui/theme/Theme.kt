@@ -38,7 +38,6 @@ fun LinkedInTheme(
         MaterialTheme(
             colors = colors,
             typography = LinkedInTypography,
-            shapes = Shapes,
             content = content
         )
     }
