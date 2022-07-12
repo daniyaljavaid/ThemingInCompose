@@ -86,7 +86,7 @@ Daniyal Javaid - [LinkedIn](https://www.linkedin.com/in/daniyal-javaid/) - daniy
 
 <!-- ACKNOWLEDGMENTS -->
 
-## Acknowledgments
+## References
 
 * [Understanding CompositionLocal](https://developer.android.com/jetpack/compose/compositionlocal)
 * [Compose MaterialTheme](https://developer.android.com/jetpack/compose/themes/material)
