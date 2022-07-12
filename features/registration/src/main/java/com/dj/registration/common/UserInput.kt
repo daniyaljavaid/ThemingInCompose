@@ -30,6 +30,7 @@ fun UserInput(label: String, keyboardOptions: KeyboardOptions) {
         labelTextStyle = MaterialTheme.customTypography.inputLabel,
         textStyle = MaterialTheme.customTypography.inputText, // or LocalExtendedTypography.current.inputField || Before: MaterialTheme.typography.body1
         colors = TextFieldDefaults.outlinedTextFieldColors(
+            unfocusedBorderColor = inputFieldColors.unFocusedBorderColor,
             focusedBorderColor = inputFieldColors.focusedBorderColor,
             focusedLabelColor = inputFieldColors.focusedLabelColor,
             cursorColor = inputFieldColors.cursorColor
