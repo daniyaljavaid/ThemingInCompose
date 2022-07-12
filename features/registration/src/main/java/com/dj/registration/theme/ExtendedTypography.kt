@@ -6,15 +6,22 @@ import androidx.compose.ui.text.TextStyle
 
 @Immutable
 data class ExtendedTypography(
-    val inputLabel: TextStyle,
-    val inputText: TextStyle
+    val inputFieldTypography: InputFieldTypography
+)
+
+@Immutable
+data class InputFieldTypography(
+    val label: TextStyle,
+    val text: TextStyle
 )
 
 // Note: accessible using -==- LocalExtendedTypography.current.inputField -==-
 // LocalExtendedTypography is to be provided by applications, else these default values will be used
 val LocalExtendedTypography = staticCompositionLocalOf {
     ExtendedTypography(
-        inputLabel = TextStyle.Default,
-        inputText = TextStyle.Default
+        inputFieldTypography = InputFieldTypography(
+            label = TextStyle.Default,
+            text = TextStyle.Default
+        )
     )
 }

@@ -27,8 +27,8 @@ fun UserInput(label: String, keyboardOptions: KeyboardOptions) {
             .padding(top = 20.dp, start = 30.dp, end = 30.dp)
             .fillMaxWidth(),
         keyboardOptions = keyboardOptions,
-        labelTextStyle = MaterialTheme.customTypography.inputLabel,
-        textStyle = MaterialTheme.customTypography.inputText, // or LocalExtendedTypography.current.inputField || Before: MaterialTheme.typography.body1
+        labelTextStyle = MaterialTheme.customTypography.inputFieldTypography.label,
+        textStyle = MaterialTheme.customTypography.inputFieldTypography.text,
         colors = TextFieldDefaults.outlinedTextFieldColors(
             unfocusedBorderColor = inputFieldColors.unFocusedBorderColor,
             focusedBorderColor = inputFieldColors.focusedBorderColor,
