@@ -42,8 +42,9 @@ CompositionLocalProvider(
 }
 ```
 
-Now use `LocalExtendedTypography.current` & `LocalExtendedColors.current` to access `ExtendedTypography`
-and `ExtendedColors` respectively.
+Now use `LocalExtendedTypography.current` & `LocalExtendedColors.current` to
+access `ExtendedTypography`
+and `ExtendedColors` objects provided by any of the <b>applications</b> modules.
 
 
 <!-- ROADMAP -->
@@ -54,7 +55,7 @@ and `ExtendedColors` respectively.
 - [x] Add <b>dependencies.gradle</b> to sync dependency versions across modules
 - [x] Add registration screen in feature module with <b>MaterialTypography</b>, <b>
   CustomTypography</b> & <b>Colors</b> support
-- [x] Provide themes from <b>Applications</b> module to <b>Registration</b> feature module
+- [x] Provide themes from <b>applications</b> module to <b>Registration</b> feature module
 - [ ] Add component spacing support in <b>Registration</b> module as each app can have different
   spacing
 
