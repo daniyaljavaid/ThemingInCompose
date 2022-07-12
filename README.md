@@ -13,28 +13,25 @@ For this project we have following modules:
 * <b>:applications:facebook</b> - module which provides its own theme for registration screen
 * <b>:applications:linkedin</b> - module which provides its own theme for registration screen
 
-
 <big><b>How things work:</b></big>
 
-<b>Registration</b> feature module exposes all of its custom theming classes using <b>
-CompositionLocal</b> with default values. 
-For example:
+<b>Registration</b> feature module exposes all of its custom theming classes using
+`CompositionLocal` with default values. For example:
 
-Theming class <b>ExtendedColors</b> is exposed using <b>LocalExtendedColors</b> composition
-&
+Theming class `ExtendedColors` is exposed using `LocalExtendedColors` composition &
 
-Theming class <b>ExtendedTypography</b> is exposed using <b>LocalExtendedTypography</b> composition
+Theming class `ExtendedTypography` is exposed using `LocalExtendedTypography` composition
 
-These classes will be used for customizing UI in <b>Registration</b> feature. 
-Both <b>Applications</b> modules i.e linkedin & facebook will create instances for these custom theming
+These classes will be used for customizing UI in <b>Registration</b> feature. Both <b>
+Applications</b> modules i.e linkedin & facebook will create instances for these custom theming
 classes and provide these instances to <b>Registration</b>
-feature module by using <b>CompositionLocalProvider</b>.
+feature module by using `CompositionLocalProvider`.
 
 For example:
 
-LinkedIn will create an instance of <b>ExtendedTypography</b> named <b>
-LinkedInExtendedTypography</b> and an instance of <b>ExtendedColors</b> named <b>
-LinkedInExtendedColors</b> and will provide to Registration module using
+LinkedIn will create an instance of `ExtendedTypography` named
+`LinkedInExtendedTypography` and an instance of `ExtendedColors` named
+`LinkedInExtendedColors` and will provide to Registration module using
 
 ```
 CompositionLocalProvider(
@@ -44,6 +41,10 @@ CompositionLocalProvider(
         RegistrationScreen()
 }
 ```
+
+Now use `LocalExtendedTypography.current` & `LocalExtendedColors.current` to access `ExtendedTypography`
+and `ExtendedColors` respectively.
+
 
 <!-- ROADMAP -->
 
