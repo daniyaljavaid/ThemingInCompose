@@ -62,6 +62,7 @@ and `ExtendedColors` objects provided by any of the <b>applications</b> modules.
   CustomTypography</b> & <b>Colors</b> support
 - [x] Provide themes from <b>applications</b> module to <b>Registration</b> feature module
 - [x] Add support for multiple input types i.e OUTLINED or FILLED
+- [x] Add support for button shape
 - [ ] Add component spacing support in <b>Registration</b> module as each app can have different
   spacing
 
