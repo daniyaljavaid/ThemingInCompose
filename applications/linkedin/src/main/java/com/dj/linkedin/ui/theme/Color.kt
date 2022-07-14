@@ -15,7 +15,8 @@ val LinkedInExtendedColors = ExtendedColors(
         unFocusedBorderColor = Red200,
         focusedBorderColor = Red500,
         focusedLabelColor = Red500,
-        cursorColor = Red500
+        cursorColor = Red500,
+        backgroundColor = Color.Transparent
     ),
     submitButtonColors = SubmitButtonColors(
         bgColor = Red500,

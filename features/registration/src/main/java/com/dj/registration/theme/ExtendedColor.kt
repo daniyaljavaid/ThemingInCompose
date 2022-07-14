@@ -16,7 +16,8 @@ data class InputFieldColors(
     val unFocusedBorderColor: Color,
     val focusedBorderColor: Color,
     val focusedLabelColor: Color,
-    val cursorColor: Color
+    val cursorColor: Color,
+    val backgroundColor: Color
 )
 
 @Immutable
@@ -33,7 +34,8 @@ val LocalExtendedColors = staticCompositionLocalOf {
             unFocusedBorderColor = Color.Gray,
             focusedBorderColor = Color.Gray,
             focusedLabelColor = Color.Gray,
-            cursorColor = Color.Gray
+            cursorColor = Color.Gray,
+            backgroundColor = Color.Transparent
         ),
         submitButtonColors = SubmitButtonColors(
             bgColor = Color.Gray,

@@ -6,6 +6,7 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import com.dj.registration.theme.LocalComponentTypes
 import com.dj.registration.theme.LocalExtendedColors
 import com.dj.registration.theme.LocalExtendedTypography
 
@@ -33,7 +34,8 @@ fun LinkedInTheme(
     }
     CompositionLocalProvider(
         LocalExtendedTypography provides LinkedInExtendedTypography,
-        LocalExtendedColors provides LinkedInExtendedColors
+        LocalExtendedColors provides LinkedInExtendedColors,
+        LocalComponentTypes provides LinkedInComponentTypes
     ) {
         MaterialTheme(
             colors = colors,

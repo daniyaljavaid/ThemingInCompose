@@ -16,6 +16,7 @@ val FacebookExtendedColors = ExtendedColors(
         focusedBorderColor = Purple700,
         focusedLabelColor = Purple500,
         cursorColor = Purple200,
+        backgroundColor = Color.Transparent
     ),
     submitButtonColors = SubmitButtonColors(
         bgColor = Purple700,
