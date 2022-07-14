@@ -15,6 +15,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import com.dj.registration.common.UserInput
 import com.dj.registration.theme.customColors
+import com.dj.registration.theme.customShapes
 
 @Composable
 fun RegistrationScreen() {
@@ -56,7 +57,7 @@ fun RegistrationScreen() {
                 backgroundColor = MaterialTheme.customColors.submitButtonColors.bgColor,
                 contentColor = MaterialTheme.customColors.submitButtonColors.textColor,
             ),
-            shape = RoundedCornerShape(100f),
+            shape = MaterialTheme.customShapes.submitButtonShape,
             elevation = ButtonDefaults.elevation(10.dp),
             content = {
                 Text("Submit")
