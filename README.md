@@ -46,6 +46,12 @@ Now use `LocalExtendedTypography.current` & `LocalExtendedColors.current` to
 access `ExtendedTypography`
 and `ExtendedColors` objects provided by any of the <b>applications</b> modules.
 
+<b>Note:</b>
+Use either `FacebookApp()` or `LinkedInApp()` in `MainActivity` to try out themes provided by these
+2 <b>applications</b> modules.
+
+
+
 ## Results
 
 [<img src="readmeAssets/Screenshot_20220712_232631.png" width="260"/>](readmeAssets/Screenshot_20220712_232631.png)
